@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DocDock Legal Disclaimer</title>
+  <meta name="description" content="Legal and warranty disclaimers for using the DocDock application and utilities.">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom Overrides -->
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      darkMode: 'media',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 min-h-screen flex flex-col font-sans">
+
+  <!-- Header / Navigation -->
+  <header class="border-b border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="w-8 h-8 rounded bg-zinc-900 dark:bg-zinc-50 flex items-center justify-center text-white dark:text-zinc-950 font-bold text-lg">D</span>
+        <span class="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">DocDock</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-400">
+        <a href="index.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Support</a>
+        <a href="privacy.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Privacy</a>
+        <a href="terms.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Terms</a>
+        <a href="eula.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">EULA</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <a href="mailto:tu994002@gmail.com" class="text-xs sm:text-sm bg-zinc-900 dark:bg-zinc-50 text-white dark:text-zinc-950 px-4 h-9 rounded-md flex items-center justify-center font-medium hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors">
+          Contact Support
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Legal Container -->
+  <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 sm:p-10 bg-white dark:bg-zinc-900/10">
+      
+      <h1 class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white mb-2">Legal Disclaimer</h1>
+      <p class="text-sm text-zinc-500 mb-8">Limitation of warranty and general disclaimers</p>
+
+      <div class="space-y-6 text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
+        <section>
+          <h2 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">1. General Disclaimer</h2>
+          <p>
+            The information and tools provided by the DocDock application ("the App") are for general document management, sharing, and utility purposes only. All utilities are executed locally on the user's hardware. While we strive to maintain high software stability and performance, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the App's tools.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">2. Peer-to-Peer (P2P) File Transfer Disclaimer</h2>
+          <p>
+            DocDock allows local peer-to-peer file transfer over Wi-Fi and LAN networks. 
+          </p>
+          <ul class="list-disc list-inside mt-2 space-y-1 pl-4">
+            <li><strong>Security and Acceptance:</strong> You are responsible for ensuring you only accept connection pairing and file transfers from trusted devices and users. The developer has no control over which files are sent between devices and is not liable for files containing malware, viruses, or offensive content shared via local transfers.</li>
+            <li><strong>Transfer Failures:</strong> Network packet loss, local router configurations, firewall settings, or device battery management can interrupt transfers. We disclaim any liability for incomplete, failed, or corrupted file transfers.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">3. Third-Party Cloud Integrations</h2>
+          <p>
+            DocDock offers API connections to Google Drive, Microsoft OneDrive, and Dropbox.
+          </p>
+          <ul class="list-disc list-inside mt-2 space-y-1 pl-4">
+            <li><strong>No Affiliation:</strong> DocDock is an independent utility and is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Google LLC, Microsoft Corporation, Dropbox Inc., or any of their subsidiaries.</li>
+            <li><strong>API Access:</strong> Cloud storage APIs are accessed directly from your device. We are not responsible for provider downtime, rate limits, token revocation, or deletions of files from your cloud account.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">4. On-Device File Processing, OCR & Speech Recognition</h2>
+          <p>
+            OCR (optical character recognition) and speech recognition utilities are executed entirely on-device using local libraries and APIs (such as Google ML Kit and Apple SFSpeechRecognizer).
+          </p>
+          <ul class="list-disc list-inside mt-2 space-y-1 pl-4">
+            <li><strong>Accuracy & Quality Limits:</strong> Recognition and transcription accuracy is heavily dependent on audio quality, speech clarity, speaker accents, and native operating system framework algorithms. The Developer does not guarantee the typographical or semantic accuracy of generated text, OCR document search layers, or transcriptions. <strong>Please note that speech recognition is designed for transcribing clear spoken voice recordings and is not reliable for transcribing music, singing, or audio files with high background noise.</strong></li>
+            <li><strong>Data Integrity:</strong> File conversions (such as image-to-PDF or audio formats) are utility-level calculations. Please confirm the formatting of your output files before deleting original source documents.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">5. Media Playback & Slider Synchronization</h2>
+          <p>
+            DocDock includes local audio player and editor utilities.
+          </p>
+          <ul class="list-disc list-inside mt-2 space-y-1 pl-4">
+            <li><strong>Playback Seek & Progress:</strong> The media player utilizes native device audio APIs to play and seek media tracks. You acknowledge that the progress slider indicator may occasionally display minor synchronization lag or slight inaccuracies (especially near the end of a track), depending on the audio file format encoding, variable bitrates, or system decoder latency.</li>
+            <li><strong>Audio Edits:</strong> Local audio trimming, fading, and ringtone exports are processing-heavy tasks. You should maintain backup copies of your source files before executing destructive local edits.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">6. Updates and Support</h2>
+          <p>
+            The Developer reserves the right to modify, suspend, or discontinue the App or any local tool feature at any time without notice. We are not liable for any inconvenience or data access limitations resulting from feature updates.
+          </p>
+        </section>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <p class="text-xs text-zinc-500 order-last md:order-first">
+          &copy; 2026 Aerobrid. All rights reserved.
+        </p>
+        <div class="flex flex-wrap gap-x-6 gap-y-2 text-xs font-medium text-zinc-500">
+          <a href="privacy.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Terms of Service</a>
+          <a href="eula.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">EULA</a>
+          <a href="impressum.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Impressum</a>
+          <a href="accessibility.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Accessibility</a>
+          <a href="disclaimer.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

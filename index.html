@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DocDock Support & FAQs</title>
+  <meta name="description" content="Find help, search FAQs, and contact support for DocDock, your secure local-first document workspace.">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom Overrides -->
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      darkMode: 'media',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 min-h-screen flex flex-col font-sans">
+
+  <!-- Header / Navigation -->
+  <header class="border-b border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <!-- Modern minimalist square bracket icon matching shadcn theme -->
+        <span class="w-8 h-8 rounded bg-zinc-900 dark:bg-zinc-50 flex items-center justify-center text-white dark:text-zinc-950 font-bold text-lg">D</span>
+        <span class="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">DocDock</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-400">
+        <a href="index.html" class="text-zinc-900 dark:text-white border-b-2 border-zinc-900 dark:border-white py-1">Support</a>
+        <a href="privacy.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Privacy</a>
+        <a href="terms.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Terms</a>
+        <a href="eula.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">EULA</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <a href="mailto:tu994002@gmail.com" class="text-xs sm:text-sm bg-zinc-900 dark:bg-zinc-50 text-white dark:text-zinc-950 px-4 h-9 rounded-md flex items-center justify-center font-medium hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors">
+          Contact Support
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Hero Section -->
+  <main class="flex-grow">
+    <section class="border-b border-zinc-200 dark:border-zinc-800 py-16 sm:py-20 bg-zinc-50 dark:bg-zinc-900/50">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-white mb-4">
+          Get DocDock for Windows
+        </h1>
+        <p class="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
+          Secure, offline-first local file transfer, PDF editing, music editing/playing, and conversions. 
+        </p>
+        <div class="mt-8 flex flex-col items-center gap-4">
+          <a href="https://github.com/Aerobrid/docdock-docs/releases/latest/download/DocDock-Windows.zip" class="bg-zinc-900 dark:bg-zinc-50 text-white dark:text-zinc-950 px-6 py-3 rounded-md font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors text-base shadow-sm">
+            Download for Windows
+          </a>
+          
+          <div class="text-xs text-zinc-600 dark:text-zinc-400 bg-white dark:bg-zinc-900/10 border border-zinc-200 dark:border-zinc-800 rounded-md p-4 max-w-xs text-left shadow-sm">
+            <p class="font-semibold text-zinc-900 dark:text-white mb-1.5">How to install &amp; run:</p>
+            <ol class="list-decimal list-inside space-y-1.5 text-zinc-600 dark:text-zinc-400">
+              <li>Extract the downloaded <strong>DocDock-Windows.zip</strong>.</li>
+              <li>Open the extracted folder (e.g., <em>Release</em>).</li>
+              <li>Double-click <strong>DocDock.exe</strong> to start the app.</li>
+            </ol>
+            <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-3 leading-normal border-t border-zinc-100 dark:border-zinc-900 pt-2 font-medium">
+              *First launch? Click <strong>"More info"</strong> and <strong>"Run anyway"</strong> if a SmartScreen warning appears.
+            </p>
+          </div>
+        </div>
+        <div class="mt-12 pt-6 border-t border-zinc-200 dark:border-zinc-800 max-w-xs mx-auto">
+          <p class="text-[10px] text-zinc-400 dark:text-zinc-500 uppercase tracking-widest font-bold mb-1">DocDock Help Center</p>
+          <a href="#faqs" class="text-xs text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white underline font-medium">
+            Scroll to FAQs &amp; Support &darr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs & App Guide -->
+    <section id="faqs" class="max-w-4xl mx-auto px-4 py-16">
+      <h2 class="text-2xl font-bold text-zinc-900 dark:text-white mb-8 border-b border-zinc-200 dark:border-zinc-800 pb-3">
+        Frequently Asked Questions
+      </h2>
+      
+      <div class="space-y-6">
+        <!-- FAQ Item 1 -->
+        <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
+          <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
+            How does peer-to-peer file transfer work in DocDock?
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            DocDock uses your local network (Wi-Fi or LAN) to discover nearby devices and transfer files directly. It advertises presence using UDP broadcasts on port 53317 and native Bonjour/mDNS records. When you transfer files, they travel securely directly between your devices using standard HTTP with chunked AES-GCM encrypted payloads. <strong>No cloud servers or intermediate databases are involved in your file transfers.</strong>
+          </p>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
+          <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
+            Are my files, scans, or document edits stored on your servers?
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            <strong>No.</strong> DocDock operates under an offline-first architecture. All documents, images, scanned pages, signatures, converted files, and audio transcriptions are stored locally in the secure app container on your device. We do not operate any backend server to ingest, collect, or store your private documents.
+          </p>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
+          <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
+            How do I connect my Google Drive, Dropbox, or OneDrive accounts?
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            You can link your personal cloud storage accounts by selecting the storage dropdown in the Files tab. Authorization utilizes standard OAuth 2.0 with PKCE. The login occurs directly with the provider (Google, Dropbox, or Microsoft), and the returned OAuth tokens are saved securely on your device's local keychain. These credentials are only used by the app to interact directly with the respective cloud APIs from your device; they are never sent to us or any third party.
+          </p>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
+          <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
+            How do on-device conversions, PDF OCR, and speech transcribing work?
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            To protect your privacy, DocDock performs file processing locally. Image-to-PDF compilation, PDF editing, and media trimming run using local code libraries. 
+            PDF OCR ("Make searchable") uses local on-device ML Kit text recognition libraries, and audio/video transcription is handled locally using the device's native Speech Recognition API (Apple's SFSpeechRecognizer on iOS). Your documents and voice recordings are never sent to external servers for processing.
+          </p>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
+          <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
+            How can I cancel or restore my DocDock Pro subscription?
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            DocDock Pro subscriptions are securely managed directly by your app store (Apple App Store or Google Play). You can cancel your subscription at any time by going to your App Store account settings &gt; Subscriptions. If you reinstall the app or change devices, you can restore your purchase by tapping the "Restore Purchase" button at the bottom of the paywall screen or within the app's settings page.
+          </p>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
+          <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
+            Why does Windows flag the app download as "unrecognized"?
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            DocDock is an independent, local-first utility. Because I build and distribute the Windows build directly without purchasing an expensive annual corporate developer certificate, Windows SmartScreen may show an "unrecognized app" pop-up on first launch. <strong>The app is 100% safe and runs entirely offline on your system.</strong> To open the app, simply click <strong>"More info"</strong> and then click <strong>"Run anyway"</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support Contact Block -->
+    <section class="border-t border-zinc-200 dark:border-zinc-800 py-16 bg-zinc-50 dark:bg-zinc-900/50">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold text-zinc-900 dark:text-white mb-2">
+          Still have questions?
+        </h2>
+        <p class="text-zinc-600 dark:text-zinc-400 text-sm mb-6 max-w-lg mx-auto">
+          Feel free to reach out to the developer directly. Drop me an email, and I will get back to you as soon as possible.
+        </p>
+        <div class="inline-flex flex-col items-center">
+          <a href="mailto:tu994002@gmail.com" class="bg-zinc-900 dark:bg-zinc-50 text-white dark:text-zinc-950 px-6 py-3 rounded-md font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors text-sm">
+            Email tu994002@gmail.com
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <p class="text-xs text-zinc-500 order-last md:order-first">
+          &copy; 2026 Aerobrid. All rights reserved.
+        </p>
+        <div class="flex flex-wrap gap-x-6 gap-y-2 text-xs font-medium text-zinc-500">
+          <a href="privacy.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Terms of Service</a>
+          <a href="eula.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">EULA</a>
+          <a href="impressum.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Impressum</a>
+          <a href="accessibility.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Accessibility</a>
+          <a href="disclaimer.html" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
