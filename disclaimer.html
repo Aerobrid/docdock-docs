@@ -89,11 +89,12 @@
         <section>
           <h2 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">4. On-Device File Processing, OCR & Speech Recognition</h2>
           <p>
-            OCR (optical character recognition) and speech recognition utilities are executed entirely on-device using local libraries and APIs (such as Google ML Kit and Apple SFSpeechRecognizer).
+            OCR (optical character recognition), file conversion, and speech recognition utilities are executed entirely on-device using local libraries and APIs (such as Google ML Kit and Apple SFSpeechRecognizer).
           </p>
           <ul class="list-disc list-inside mt-2 space-y-1 pl-4">
-            <li><strong>Accuracy & Quality Limits:</strong> Recognition and transcription accuracy is heavily dependent on audio quality, speech clarity, speaker accents, and native operating system framework algorithms. The Developer does not guarantee the typographical or semantic accuracy of generated text, OCR document search layers, or transcriptions. <strong>Please note that speech recognition is designed for transcribing clear spoken voice recordings and is not reliable for transcribing music, singing, or audio files with high background noise.</strong></li>
-            <li><strong>Data Integrity:</strong> File conversions (such as image-to-PDF or audio formats) are utility-level calculations. Please confirm the formatting of your output files before deleting original source documents.</li>
+            <li><strong>Platform & Feature Availability:</strong> Certain features, specifically on-device OCR for image-only or scanned PDF-to-Text conversions, are platform-dependent (e.g. available only on iOS and Android mobile platforms) and subscription-gated. On unsupported platforms or under non-premium status, the application will append placeholder text indicating these limitations rather than performing OCR.</li>
+            <li><strong>Accuracy & Quality Limits:</strong> Recognition, text extraction, and transcription accuracy is heavily dependent on source document quality, formatting, image resolution, and native operating system framework algorithms. The Developer does not guarantee the typographical, layout, or semantic accuracy of extracted text, OCR document search layers, or speech transcriptions. <strong>Please note that speech recognition is designed for transcribing clear spoken voice recordings and is not reliable for transcribing music, singing, or audio files with high background noise.</strong></li>
+            <li><strong>Data Integrity:</strong> All file conversions (including PDF-to-Text, image-to-PDF, or audio formats) are utility-level calculations. Please confirm the formatting, completeness, and accuracy of your output files before deleting original source documents.</li>
           </ul>
         </section>
 
