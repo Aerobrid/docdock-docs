@@ -58,7 +58,7 @@
           Get DocDock for Windows
         </h1>
         <p class="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-          Secure, offline-first local file transfer, PDF editing, music editing/playing, and file conversions. 
+          Secure, offline-first local file transfer, PDF editing, image editing, file conversions, QR code generation, audio transcription, and more!
         </p>
         <div class="mt-8 flex flex-col items-center gap-4">
           <a href="https://github.com/Aerobrid/docdock-docs/releases/latest/download/DocDock-Windows.zip" class="bg-zinc-900 dark:bg-zinc-50 text-white dark:text-zinc-950 px-6 py-3 rounded-md font-semibold hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors text-base shadow-sm">
@@ -130,7 +130,17 @@
           </h3>
           <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
             To protect your privacy, DocDock performs file processing locally. Image-to-PDF compilation, PDF editing, and media trimming run using local code libraries. 
-            PDF OCR ("Make searchable") uses local on-device ML Kit text recognition libraries, and audio/video transcription is handled locally using the device's native Speech Recognition API (Apple's SFSpeechRecognizer on iOS). Your documents and voice recordings are never sent to external servers for processing.
+            PDF OCR ("Make searchable") uses local on-device ML Kit text recognition libraries, and audio/video transcription is handled locally using Whisper AI models that run entirely on your device's CPU. Your documents and voice recordings are never sent to external servers for processing.
+          </p>
+        </div>
+
+        <!-- FAQ Item 4.5 -->
+        <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
+          <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
+            What tools does DocDock include?
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            DocDock includes a comprehensive set of offline-first tools: peer-to-peer file transfer, PDF editor with annotations and forms, QR code generator with customization options, audio/video transcription using Whisper AI, file format converter, document scanner, image editor with filters and adjustments, music player with metadata editor, and cloud storage integration (Google Drive, Dropbox, OneDrive). Batch actions for file management (move, copy, rename, delete, compress/extract) are also available. Theme customization with multiple presets is included.
           </p>
         </div>
 
@@ -147,10 +157,90 @@
         <!-- FAQ Item 6 -->
         <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
           <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
+            How does the Image Editor work?
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            The Image Editor allows you to crop, rotate, and flip images. You can draw freehand, add text overlays, apply stickers, use filters, blur regions, resize dimensions, and extract colors using an eyedropper tool. All editing is performed locally on your device. Very high-resolution images may require more device memory to process.
+          </p>
+        </div>
+
+        <!-- FAQ Item 7 -->
+        <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
+          <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
+            How does the Document Scanner work?
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            The Document Scanner uses your device camera to capture physical documents. You can crop pages automatically or manually, place signatures, and save the result as a PDF. On mobile devices, you can also use OCR to make scanned pages searchable. The scanner has limits of 50 MB on mobile and 200 MB on desktop, with a maximum of 100 pages per scan.
+          </p>
+        </div>
+
+        <!-- FAQ Item 8 -->
+        <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
+          <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
+            What can I do with the PDF Editor?
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            The PDF Editor lets you fill forms, annotate pages with text and drawings, add shapes, merge multiple PDFs, split PDFs into separate files, export specific pages, and lock/unlock PDFs with passwords. Search and replace functionality is disabled for files larger than 50 pages. OCR to make scanned pages searchable is available on mobile devices for files up to 50 pages. File size limits are 50 MB on mobile and 250 MB on desktop.
+          </p>
+        </div>
+
+        <!-- FAQ Item 9 -->
+        <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
+          <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
+            What file formats does the File Converter support?
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            The File Converter supports conversions between popular image formats (PNG, JPEG, WebP, GIF, BMP), video formats (MP4, WebM, MOV, AVI), audio formats (MP3, WAV, AAC, OGG, FLAC), text formats (TXT, Markdown), and spreadsheet formats (CSV). Conversions are performed locally on your device. File size limits are 100 MB on mobile and 500 MB on desktop.
+          </p>
+        </div>
+
+        <!-- FAQ Item 10 -->
+        <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
+          <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
+            How does the Music Editor work?
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            The Music Editor allows you to trim audio tracks, adjust playback speed, modify volume, apply fade-in and fade-out effects, and export ringtones (on iOS) or audio files. Metadata editing (title, artist, album, genre, track number, year, artwork) is available on desktop platforms. All processing is done locally on your device.
+          </p>
+        </div>
+
+        <!-- FAQ Item 11 -->
+        <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
+          <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
+            What can I create with the QR Code Generator?
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            The QR Code Generator supports creating QR codes for URLs, plain text, email addresses, phone numbers, calendar events, geographic locations, WiFi credentials, and file sharing links. You can customize colors (foreground, background, eye colors), choose between circular or square modules and eyes, add logos, and export in PNG, JPG, or SVG formats at various resolutions.
+          </p>
+        </div>
+
+        <!-- FAQ Item 12 -->
+        <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
+          <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
+            What are batch actions and how do they work?
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            Batch actions allow you to perform operations on multiple files at once in the File Store. You can select multiple files and move, copy, rename, or delete them in a single operation. You can also compress selected files into a ZIP archive or extract ZIP archives. The total uncompressed size for compression cannot exceed 2 GB. Batch actions are a Pro feature.
+          </p>
+        </div>
+
+        <!-- FAQ Item 13 -->
+        <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
+          <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
+            How does theme customization work?
+          </h3>
+          <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
+            DocDock includes multiple theme presets including ability to make custom app theme. You can choose between light and dark modes and select font styles. 
+          </p>
+        </div>
+
+        <!-- FAQ Item 14 -->
+        <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
+          <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
             Why does Windows flag the app download as "unrecognized"?
           </h3>
           <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
-            DocDock is an independent, local-first utility. Because I build and distribute the Windows build directly without purchasing an expensive annual corporate developer certificate, Windows SmartScreen may show an "unrecognized app" pop-up on first launch. <strong>The app is 100% safe and runs entirely offline on your system.</strong> To open the app, simply click <strong>"More info"</strong> and then click <strong>"Run anyway"</strong>.
+            DocDock is an independent, local-first utility. Because the developer builds and distributes the Windows build directly without purchasing an expensive annual corporate developer certificate, Windows SmartScreen may show an "unrecognized app" pop-up on first launch. <strong>The app is 100% safe and will run offline on your system.</strong> To open the app, simply click <strong>"More info"</strong> and then click <strong>"Run anyway"</strong>.
           </p>
         </div>
       </div>

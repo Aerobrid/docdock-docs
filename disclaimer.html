@@ -89,17 +89,60 @@
         <section>
           <h2 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">4. On-Device File Processing, OCR & Speech Recognition</h2>
           <p>
-            OCR (optical character recognition), file conversion, and speech recognition utilities are executed entirely on-device using local libraries and APIs (such as Google ML Kit and Apple SFSpeechRecognizer).
+            OCR (optical character recognition), file conversion, and speech recognition utilities are executed entirely on-device using local libraries and APIs (such as Google ML Kit and Whisper AI models).
           </p>
           <ul class="list-disc list-inside mt-2 space-y-1 pl-4">
             <li><strong>Platform & Feature Availability:</strong> Certain features, specifically on-device OCR for image-only or scanned PDF-to-Text conversions, are platform-dependent (e.g. available only on iOS and Android mobile platforms) and subscription-gated. On unsupported platforms or under non-premium status, the application will append placeholder text indicating these limitations rather than performing OCR.</li>
             <li><strong>Accuracy & Quality Limits:</strong> Recognition, text extraction, and transcription accuracy is heavily dependent on source document quality, formatting, image resolution, and native operating system framework algorithms. The Developer does not guarantee the typographical, layout, or semantic accuracy of extracted text, OCR document search layers, or speech transcriptions. <strong>Please note that speech recognition is designed for transcribing clear spoken voice recordings and is not reliable for transcribing music, singing, or audio files with high background noise.</strong></li>
+            <li><strong>Whisper AI CPU Processing:</strong> Audio and video transcription uses Whisper AI models that run entirely on your device's CPU. Transcription time varies significantly based on file length, audio quality, and device processing power. Large files (such as podcasts, movies, or long recordings) may take considerable time to process. The Developer is not responsible for processing delays or device resource consumption during transcription.</li>
             <li><strong>Data Integrity:</strong> All file conversions (including PDF-to-Text, image-to-PDF, or audio formats) are utility-level calculations. Please confirm the formatting, completeness, and accuracy of your output files before deleting original source documents.</li>
           </ul>
         </section>
 
         <section>
-          <h2 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">5. Media Playback & Slider Synchronization</h2>
+          <h2 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">5. PDF Editor Limitations</h2>
+          <p>
+            The PDF editor includes search, replace, and OCR functionality that has performance limitations to prevent application instability.
+          </p>
+          <ul class="list-disc list-inside mt-2 space-y-1 pl-4">
+            <li><strong>Search & Replace:</strong> Search and replace functionality is disabled for PDF files larger than 50 pages to prevent performance issues and application crashes. For larger documents, please use alternative tools or split the PDF into smaller sections.</li>
+            <li><strong>OCR Limitations:</strong> OCR (Make Searchable) is disabled for PDF files larger than 50 pages on mobile devices to prevent memory exhaustion and crashes. This feature is available only on iOS and Android platforms.</li>
+            <li><strong>File Size Limits:</strong> The PDF editor has file size limits of 50 MB on mobile devices and 250 MB on desktop platforms. Files exceeding these limits cannot be opened in the editor to prevent out-of-memory errors and application instability.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">6. File Size Limits & Processing Constraints</h2>
+          <p>
+            Different tools in DocDock have file size limits to prevent memory exhaustion, application crashes, and device instability. These limits vary by platform (mobile vs. desktop) due to available RAM.
+          </p>
+          <ul class="list-disc list-inside mt-2 space-y-1 pl-4">
+            <li><strong>File Transfer:</strong> Peer-to-peer file transfers have a maximum limit of 2 GB per file. Larger files cannot be transferred through the app.</li>
+            <li><strong>File Converter:</strong> File format conversions are limited to 100 MB on mobile devices and 500 MB on desktop platforms. Files exceeding these limits cannot be converted.</li>
+            <li><strong>Document Scanner:</strong> The scanner has a file size limit of 50 MB on mobile devices and 200 MB on desktop platforms, with a maximum of 100 pages per scan. Larger documents should be scanned in sections.</li>
+            <li><strong>PDF Editor:</strong> As detailed in section 5, PDF editing is limited to 50 MB on mobile and 250 MB on desktop, with OCR and search/replace disabled for files over 50 pages.</li>
+            <li><strong>Batch Compression:</strong> When compressing files into ZIP archives, the total uncompressed size of all files cannot exceed 2 GB.</li>
+            <li><strong>Image Editor:</strong> Image editing loads the entire image into memory. Very high-resolution images may fail to load or cause performance issues depending on device RAM.</li>
+            <li><strong>Transcription:</strong> Audio and video transcription uses CPU-intensive on-device processing. Large files (podcasts, movies, long recordings) may take considerable time to process and may cause device heating or resource consumption.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">7. Corrupt, Tampered, or Unsupported Files</h2>
+          <p>
+            DocDock processes files locally and cannot guarantee successful handling of all file types or conditions.
+          </p>
+          <ul class="list-disc list-inside mt-2 space-y-1 pl-4">
+            <li><strong>Corrupt Files:</strong> Files that are corrupted, truncated, or have invalid headers may fail to open, convert, or transfer. The app is not responsible for data loss resulting from attempts to process corrupt files.</li>
+            <li><strong>Tampered Files:</strong> Files that have been modified outside of standard specifications (e.g., malformed PDFs, invalid image metadata, corrupted audio streams) may cause processing errors or application instability.</li>
+            <li><strong>Unsupported Formats:</strong> While DocDock supports many common file formats, not all formats are supported. Attempting to process unsupported formats may result in errors or unexpected behavior.</li>
+            <li><strong>Encrypted/Protected Files:</strong> Password-protected PDFs, DRM-protected media, and encrypted files may not be processable. The app does not bypass encryption or DRM protections.</li>
+            <li><strong>User Responsibility:</strong> Users should maintain backups of important files before processing. The Developer is not responsible for any loss of data, corruption, or damage resulting from attempts to process problematic files.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">8. Media Playback & Slider Synchronization</h2>
           <p>
             DocDock includes local audio player and editor utilities.
           </p>
@@ -110,7 +153,24 @@
         </section>
 
         <section>
-          <h2 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">6. Updates and Support</h2>
+          <h2 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">9. Developer Disclaimer of Responsibility</h2>
+          <p>
+            The Developer provides DocDock as a utility tool "as is" without any express or implied warranties. The Developer is not responsible for:
+          </p>
+          <ul class="list-disc list-inside mt-2 space-y-1 pl-4">
+            <li>Any loss of data, files, or documents resulting from app usage, crashes, or device failures.</li>
+            <li>Processing delays, device overheating, or resource consumption during CPU-intensive operations such as transcription, conversion, or OCR.</li>
+            <li>Accuracy or completeness of transcriptions, OCR text extraction, or file conversions.</li>
+            <li>Any damages arising from the use of peer-to-peer file transfer features, including receipt of malicious files.</li>
+            <li>Compatibility issues with specific file formats, devices, or operating system versions.</li>
+          </ul>
+          <p class="mt-2">
+            Users are responsible for maintaining backups of important files and verifying the accuracy of processed documents before deleting originals.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">10. Updates and Support</h2>
           <p>
             The Developer reserves the right to modify, suspend, or discontinue the App or any local tool feature at any time without notice. We are not liable for any inconvenience or data access limitations resulting from feature updates.
           </p>
