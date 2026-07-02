@@ -108,6 +108,8 @@
             <li><strong>Search & Replace:</strong> Search and replace functionality is disabled for PDF files larger than 50 pages to prevent performance issues and application crashes. For larger documents, please use alternative tools or split the PDF into smaller sections.</li>
             <li><strong>OCR Limitations:</strong> OCR (Make Searchable) is disabled for PDF files larger than 50 pages on mobile devices to prevent memory exhaustion and crashes. This feature is available only on iOS and Android platforms.</li>
             <li><strong>File Size Limits:</strong> The PDF editor has file size limits of 50 MB on mobile devices and 250 MB on desktop platforms. Files exceeding these limits cannot be opened in the editor to prevent out-of-memory errors and application instability.</li>
+            <li><strong>Search & Replace Accuracy:</strong> Search and replace accuracy depends entirely on the underlying PDF's font metadata and positioning stream. Even if a PDF contains searchable text, this functionality may be inaccurate or fail to match queries if the document uses custom character encodings, non-standard font programs, or lacks standard Unicode mappings (such as missing ToUnicode tables). In such cases on mobile platforms, run the "Make Searchable" (OCR) tool first to establish a clean searchable text layer.</li>
+            <li><strong>Desktop Limitations (Windows):</strong> The "Make Searchable" (OCR) tool is not supported on Windows or other desktop platforms. As a result, scanned, image-only, or custom-encoded PDFs cannot be converted to searchable documents on desktop. Please perform OCR on a supported mobile device (iOS/Android) or use external tools before importing these documents.</li>
           </ul>
         </section>
 
