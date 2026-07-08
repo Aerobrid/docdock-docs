@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DocDock Support & FAQs</title>
-  <meta name="description" content="Find help, search FAQs, and contact support for DocDock, your secure local-first document workspace.">
+  <title>DocDock Connect Support & FAQs</title>
+  <meta name="description" content="Find help, search FAQs, and contact support for DocDock Connect, your secure local-first document workspace.">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts Inter -->
@@ -33,8 +33,8 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
         <!-- Modern minimalist square bracket icon matching shadcn theme -->
-        <img src="app_icon.png" alt="DocDock Logo" class="w-8 h-8 rounded object-contain" />
-        <span class="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">DocDock</span>
+        <img src="app_icon.png" alt="DocDock Connect Logo" class="w-8 h-8 rounded object-contain" />
+        <span class="text-xl font-bold tracking-tight text-zinc-900 dark:text-white">DocDock Connect</span>
       </a>
       <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-400">
         <a href="index.html" class="text-zinc-900 dark:text-white border-b-2 border-zinc-900 dark:border-white py-1">Support</a>
@@ -56,7 +56,7 @@
     <section class="border-b border-zinc-200 dark:border-zinc-800 py-16 sm:py-20 bg-zinc-50 dark:bg-zinc-900/50">
       <div class="max-w-4xl mx-auto px-4 text-center">
         <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-white mb-4">
-          Get DocDock for Windows
+          Get DocDock Connect for Windows
         </h1>
         <p class="text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
           Secure, offline-first local file transfer, PDF editing, image editing, file conversions, QR code generation, audio transcription, and more!
@@ -79,7 +79,7 @@
           </div>
         </div>
         <div class="mt-12 pt-6 border-t border-zinc-200 dark:border-zinc-800 max-w-xs mx-auto">
-          <p class="text-[10px] text-zinc-400 dark:text-zinc-500 uppercase tracking-widest font-bold mb-1">DocDock Help Center</p>
+          <p class="text-[10px] text-zinc-400 dark:text-zinc-500 uppercase tracking-widest font-bold mb-1">DocDock Connect Help Center</p>
           <a href="#faqs" class="text-xs text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white underline font-medium">
             Scroll to FAQs &amp; Support &darr;
           </a>
@@ -97,10 +97,10 @@
         <!-- FAQ Item 1 -->
         <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
           <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
-            How does peer-to-peer file transfer work in DocDock?
+            How does peer-to-peer file transfer work in DocDock Connect?
           </h3>
           <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
-            DocDock uses your local network (Wi-Fi or LAN) to discover nearby devices and transfer files directly. It advertises presence using UDP broadcasts on port 53317 and native Bonjour/mDNS records. When you transfer files, they travel securely directly between your devices using standard HTTP with chunked AES-GCM encrypted payloads. <strong>No cloud servers or intermediate databases are involved in your file transfers.</strong>
+            DocDock Connect uses your local network (Wi-Fi or LAN) to discover nearby devices and transfer files directly. It advertises presence using UDP broadcasts on port 53317 and native Bonjour/mDNS records. When you transfer files, they travel securely directly between your devices using standard HTTP with chunked AES-GCM encrypted payloads. <strong>No cloud servers or intermediate databases are involved in your file transfers.</strong>
           </p>
         </div>
 
@@ -110,7 +110,7 @@
             Are my files, scans, or document edits stored on your servers?
           </h3>
           <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
-            <strong>No.</strong> DocDock operates under an offline-first architecture. All documents, images, scanned pages, signatures, converted files, and audio transcriptions are stored locally in the secure app container on your device. We do not operate any backend server to ingest, collect, or store your private documents.
+            <strong>No.</strong> DocDock Connect operates under an offline-first architecture. All documents, images, scanned pages, signatures, converted files, and audio transcriptions are stored locally in the secure app container on your device. We do not operate any backend server to ingest, collect, or store your private documents.
           </p>
         </div>
 
@@ -130,7 +130,7 @@
             How do on-device conversions, PDF OCR, and speech transcribing work?
           </h3>
           <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
-            To protect your privacy, DocDock performs file processing locally. Image-to-PDF compilation, PDF editing, and media trimming run using local code libraries. 
+            To protect your privacy, DocDock Connect performs file processing locally. Image-to-PDF compilation, PDF editing, and media trimming run using local code libraries. 
             PDF OCR ("Make searchable") uses local on-device ML Kit text recognition libraries, and audio/video transcription is handled locally using Whisper AI models that run entirely on your device's CPU. Your documents and voice recordings are never sent to external servers for processing.
           </p>
         </div>
@@ -138,20 +138,20 @@
         <!-- FAQ Item 4.5 -->
         <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
           <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
-            What tools does DocDock include?
+            What tools does DocDock Connect include?
           </h3>
           <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
-            DocDock includes a comprehensive set of offline-first tools: peer-to-peer file transfer, PDF editor with annotations and forms, QR code generator with customization options, audio/video transcription using Whisper AI, file format converter, document scanner, image editor with filters and adjustments, music player with metadata editor, and cloud storage integration (Google Drive, Dropbox, OneDrive). Batch actions for file management (move, copy, rename, delete, compress/extract) are also available. Theme customization with multiple presets is included.
+            DocDock Connect includes a comprehensive set of offline-first tools: peer-to-peer file transfer, PDF editor with annotations and forms, QR code generator with customization options, audio/video transcription using Whisper AI, file format converter, document scanner, image editor with filters and adjustments, music player with metadata editor, and cloud storage integration (Google Drive, Dropbox, OneDrive). Batch actions for file management (move, copy, rename, delete, compress/extract) are also available. Theme customization with multiple presets is included.
           </p>
         </div>
 
         <!-- FAQ Item 5 -->
         <div class="border border-zinc-200 dark:border-zinc-800 rounded-lg p-6 bg-white dark:bg-zinc-900/20">
           <h3 class="text-lg font-semibold text-zinc-900 dark:text-white mb-2">
-            How can I cancel or restore my DocDock Pro subscription?
+            How can I cancel or restore my DocDock Connect Pro subscription?
           </h3>
           <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
-            DocDock Pro subscriptions are securely managed directly by your app store (Apple App Store or Google Play). You can cancel your subscription at any time by going to your App Store account settings &gt; Subscriptions. If you reinstall the app or change devices, you can restore your purchase by tapping the "Restore Purchase" button at the bottom of the paywall screen or within the app's settings page.
+            DocDock Connect Pro subscriptions are securely managed directly by your app store (Apple App Store or Google Play). You can cancel your subscription at any time by going to your App Store account settings &gt; Subscriptions. If you reinstall the app or change devices, you can restore your purchase by tapping the "Restore Purchase" button at the bottom of the paywall screen or within the app's settings page.
           </p>
         </div>
 
@@ -231,7 +231,7 @@
             How does theme customization work?
           </h3>
           <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
-            DocDock includes multiple theme presets including ability to make custom app theme. You can choose between light and dark modes and select font styles. 
+            DocDock Connect includes multiple theme presets including ability to make custom app theme. You can choose between light and dark modes and select font styles. 
           </p>
         </div>
 
@@ -241,7 +241,7 @@
             Why does Windows flag the app download as "unrecognized"?
           </h3>
           <p class="text-zinc-600 dark:text-zinc-400 leading-relaxed text-sm">
-            DocDock is an independent, local-first utility. Because the developer builds and distributes the Windows build directly without purchasing an expensive annual corporate developer certificate, Windows SmartScreen may show an "unrecognized app" pop-up on first launch. <strong>The app is 100% safe and will run offline on your system.</strong> To open the app, simply click <strong>"More info"</strong> and then click <strong>"Run anyway"</strong>.
+            DocDock Connect is an independent, local-first utility. Because the developer builds and distributes the Windows build directly without purchasing an expensive annual corporate developer certificate, Windows SmartScreen may show an "unrecognized app" pop-up on first launch. <strong>The app is 100% safe and will run offline on your system.</strong> To open the app, simply click <strong>"More info"</strong> and then click <strong>"Run anyway"</strong>.
           </p>
         </div>
       </div>
